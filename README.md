@@ -10,8 +10,8 @@ A structured and comprehensive collection of React notes covering fundamentals, 
 ```
 Everything_React
 │
-├── React Basics.txt
-├── Features of React.txt
+├── 01_React Basics.txt
+├── 02_Features of React.txt
 └── 03_Vite Setup.txt
 ```
 

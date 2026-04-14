@@ -92,29 +92,4 @@ b. Virtual DOM:
     e. Huge ecosystem and job opportunities
 
 
-        
-
-
-
-
-
-
-
-
-node modules contains all the dependencies used to create an app or website
-public contains images and logos of the app and website
-src contains all the main components
-   assets:
-   app.css contains the css file that is applied to app.jsx
-   index.css file that is applied on all the files
-gitignore contains the names of the file that should not be pushed to the github/ contains private information like api keys etc
-eslint.config.js contains all the config file
-package-lock.json contains the list of dependencies, difference between nodemodules and this is that this contains receipe
-package.json contains the version of all the dependencies
-readme.md contains all the details about a project
-vite.config.js makes it compatible for working
-
-
-component based architecture
-
 

@@ -1,0 +1,120 @@
+1. WHAT IS REACT?:
+    a. React is a JavaScript library for building user interfaces
+    b. Particularly single-page applications where you need a fast and interactive user experience. 
+    c. Developed by Facebook and is widely used in web development.
+    d. React helps developers build dynamic and responsive user interfaces by allowing them to create reusable components.
+    e. Components are the building blocks of a React application, and they can be composed together to create complex
+
+
+2. WHAT ARE FRAMEWORKS AND LIBRARIES?:
+a. Framework: 
+    -> A framework is a complete tool that provides a structure for building applications. 
+    -> Contains whole package, both libraries that you need and the one you don't need. 
+    -> memory storage is more, and it is more difficult to learn.
+    -> It dictates the architecture and design patterns to be followed. Examples include Angular and Vue.js.
+
+b. Library: 
+    -> A library is a collection of pre-written code that can be used to perform specific tasks.
+    -> It solves particular problems and can be integrated into an application as needed.
+    -> It provides functions and utilities that developers can call upon as needed.    
+    -> React is a library for building user interfaces.
+
+
+3. WHAT IS IMPERATIVE AND DECLARATIVE PROGRAMMING?:
+a. Imperative Programming: 
+    -> In imperative programming, you write code that describes how to achieve a specific outcome. (HOW TO DO IT)
+    -> You specify the steps and the flow of control to manipulate the state of the application. 
+    -> It focuses on the "HOW" of achieving a result. 
+    -> Example: Using loops and conditionals to manipulate the DOM directly.
+
+b. Declarative Programming: 
+    -> In declarative programming, you write code that describes what you want to achieve, rather than how to achieve it. (WHAT TO DO)
+    -> You describe the desired outcome, and the underlying system takes care of the implementation details.
+    -> It focuses on the "WHAT" of achieving a result.
+    -> Example: Using React's JSX to describe the UI structure, and React handles the rendering and updates.
+
+
+4. DIFFERENCE BETWEEN REACT, ANGULAR, AND VUE:
+a. React: 
+    -> React is a library for building user interfaces. 
+    -> It focuses on the view layer and allows developers to create reusable components. 
+    -> It uses a virtual DOM for efficient updates and has a large ecosystem of third-party libraries.
+    -> Data Binding: One way data binding, where data flows in a single direction from parent to child components.
+       
+
+b. Angular: 
+    -> Angular is a full-fledged framework for building web applications. 
+    -> It provides a complete solution for building applications, including routing, state management, and form handling. 
+    -> It uses a real DOM and has a steep learning curve.
+    -> Data Binding: Two-way data binding, where changes in the UI automatically update the underlying data and vice versa.
+
+
+c. Vue: 
+    -> Vue is a progressive framework for building user interfaces. 
+    -> It is designed to be incrementally adoptable, meaning you can use as much or as little of it as you need. 
+    -> It has a gentle learning curve and provides a simple and flexible API for building applications. 
+    -> It uses a virtual DOM and has a growing ecosystem of libraries and tools.
+    -> Data Binding: Two-way data binding, similar to Angular, allowing for easy synchronization between the UI and data.
+
+
+5. WHAT IS REAL DOM AND VIRTUAL DOM?:
+a. Real DOM: 
+    -> The real DOM is the actual Document Object Model that represents the structure of a web page. 
+    -> When you make changes to the real DOM, 
+    -> It can be slow and inefficient, especially for complex applications, because it requires re-rendering the entire page.
+    -> Created by browser
+
+b. Virtual DOM: 
+    -> he virtual DOM is a lightweight copy of the real DOM. 
+    -> When you make changes to the virtual DOM, 
+    -> React compares it to the previous version and only updates the parts of the real DOM that have changed. 
+    -> This makes updates faster and more efficient, as it minimizes the number of manipulations to the real DOM.
+    -> Created by React(in its own memory)
+
+                                        Real DOM
+                                            ↓
+                                        Virtual DOM created
+                                            ↓
+                                        State changes
+                                            ↓
+                                        New Virtual DOM created
+                                            ↓
+                                        Compare (diffing)
+                                            ↓
+                                        Update only changed parts of Real DOM (reconciliation)
+
+
+6. WHY USE REACT?:
+    a. Builds dynamic ui easily
+    b. Component based architecture: makes it reusable
+    c. Fast and efficient
+    d. Developer friendly
+    e. Huge ecosystem and job opportunities
+
+
+        
+
+
+
+
+
+
+
+
+node modules contains all the dependencies used to create an app or website
+public contains images and logos of the app and website
+src contains all the main components
+   assets:
+   app.css contains the css file that is applied to app.jsx
+   index.css file that is applied on all the files
+gitignore contains the names of the file that should not be pushed to the github/ contains private information like api keys etc
+eslint.config.js contains all the config file
+package-lock.json contains the list of dependencies, difference between nodemodules and this is that this contains receipe
+package.json contains the version of all the dependencies
+readme.md contains all the details about a project
+vite.config.js makes it compatible for working
+
+
+component based architecture
+
+

@@ -1,0 +1,64 @@
+FEATURES OF REACT:
+
+1. Reconciliation:
+    a. Reconciliation is the process by which React updates the real DOM to match the virtual DOM. 
+    b. When a component's state or props change, React creates a new virtual DOM tree and compares it to the previous one.
+    c. React uses a diffing algorithm to identify the differences between the two virtual DOM trees.
+    d. Based on the differences, React determines which parts of the real DOM need to be updated, added, or removed.
+
+Example: 
+    --> If you have a list of items and you add a new item, 
+        React will only update the part of the real DOM that corresponds to the new item, 
+        rather than re-rendering the entire list.
+
+2. Diffing: 
+    a. Diffing is the algorithm used by React to compare the new virtual DOM tree with the previous one. 
+    b. It identifies the differences between the two trees and determines which parts of the real DOM need to be updated.
+    c. The diffing algorithm is optimized for performance and minimizes the number of updates to the real DOM, 
+       making React applications fast and efficient.
+
+
+3. Difference between reconciliation and diffing:
+    a. Reconciliation is the overall process of updating the real DOM to match the virtual DOM, 
+    b. while diffing is a specific algorithm used within the reconciliation process to identify
+       the differences between the new and previous virtual DOM trees.
+
+
+4. SPA:SPA stands for Single Page Application.
+    a. It is a web app where: page loads once and all interactions happen without refreshing the page.
+    b. uses browserrouter for navigation
+    c. React, Angular, and Vue are popular frameworks for building SPAs.
+    d. SPAs provide a smoother and more responsive user experience, as they can update content
+
+5. Advantages of SPA:
+    a. Faster load times: PAGE IS LOADED ONCE, subsequent interactions are faster as they DON'T REQUIRE A FULL PAGE REFRESH. 
+       Only the necessary data is fetched and updated.
+    b. Improved user experience: SPAs provide a smoother and more responsive user experience, 
+       as they can update content dynamically without interrupting the user's interaction with the page.
+    c. Easier development: SPAs can be easier to develop and maintain, as they often use a single codebase for both the client and server, 
+       and they can leverage modern JavaScript frameworks like React, Angular, or Vue.js.
+    d. Better performance: SPAs can be more performant, as they can minimize the amount of data transferred between the client and server, 
+       and they can use techniques like lazy loading to optimize resource usage.  
+
+
+6. JSX: JSX stands for JavaScript XML.
+    a. It is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript files.
+    b. JSX is used in React to describe the structure of the user interface.
+    c. JSX allows you to write components in a more declarative way, making it easier to understand and maintain your code.
+
+7. JSX Expressions: 
+    a. In JSX, you can embed JavaScript expressions within curly braces {}. 
+    b. This allows you to dynamically generate content based on the state or props of a component. 
+    c. For example, you can use an expression to display a user's name or to conditionally render a component based on a certain condition.
+
+8. JSX Components: 
+    a. In React, you can create reusable components using JSX. 
+    b. A component is a self-contained piece of UI that can be reused throughout your application.
+    c. You can define a component as a function or a class, and you can use it in your JSX code just like any other HTML element.   
+
+9. JSX syntax rules: 
+    a. JSX must have a single parent element: When writing JSX, you must wrap your code in a single parent element. This can be a div, a fragment, or any other valid HTML element.
+    b. JSX uses camelCase for attributes: In JSX, you should use camelCase for attribute names instead of the traditional HTML attribute names. For example, use "className" instead of "class" and "onClick" instead of "onclick".
+    c. JSX expressions must be wrapped in curly braces: When you want to include a JavaScript expression in your JSX code, you need to wrap it in curly braces {}. This allows you to dynamically generate content based on the state or props of a component.
+    d. JSX elements must be properly closed: In JSX, you need to make sure that all elements are properly closed. This means that if you have an opening tag, you need to have a corresponding closing tag. For example, <div>...</div> or <img /> for self-closing tags.
+

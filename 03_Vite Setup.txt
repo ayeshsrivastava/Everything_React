@@ -1,0 +1,214 @@
+1. WHAT IS VITE?
+    -> Vite is a modern frontend build tool used to create React apps faster.
+
+-> Older tools like:
+    Webpack
+    CRA (Create React App)
+
+-> Problems with old tools:
+    Slow startup
+    Slow rebuild
+    Heavy bundling
+
+=>Vite solves this.
+
+
+2. WHY VITE IS FASTER?
+    Because it uses:
+        Native ES Modules
+        On-demand compilation
+        Hot Module Replacement (HMR)
+        No full bundling at start
+
+-> Old Webpack Flow:
+    Start server
+        ↓
+    Bundle entire app
+        ↓
+      Wait...
+        ↓
+    Start server
+
+-> Vite Flow:
+    Start server
+        ↓
+    Serve files instantly
+        ↓
+    Compile only when needed
+        ↓
+    Fast startup
+
+3. WHY USE VITE? 
+    Feature 1 — Fast startup:
+        -> Vite doesn't bundle whole project.
+        -> It loads only required file.
+
+    Feature 2 — Hot Module Replacement (HMR):
+        -> Change code:
+            <h1>Hello</h1>
+                 to
+            <h1>Hello Ayesh</h1>
+        -> Page updates instantly without reload.
+
+    Feature 3 — Zero Config:
+        -> You don't configure:
+            webpack.config
+            babel.config
+            loaders
+        -> Vite handles automatically.
+
+    Feature 4 — Optimized build:
+        -> For production Vite uses:
+            Rollup bundler
+            Smaller bundle size.
+
+4. CREATE VITE REACT APP:
+    Step 1: Install Node
+        Check:
+            node -v
+        Check npm:
+            npm -v
+
+    Step 2: Create Vite React App
+        npm create vite@latest .    #'.' means current folder, this is used to create Vite app in current directory.
+
+        Then:
+            Select framework:
+                React
+            Select variant:
+                JavaScript
+                
+            This installs:
+                react
+                react-dom
+                vite
+                plugins
+
+    Step 3: Start server
+        npm run dev
+
+        Output:
+            http://localhost:5173
+        Your React app runs.
+
+5. VITE FOLDER STRUCTURE (VERY IMPORTANT):
+    -> When created:
+        my-app
+        ├── node_modules
+        ├── public
+        ├── src
+        ├── index.html
+        ├── package.json
+        ├── vite.config.js
+        └── README.md
+
+a. node_modules/
+    -> Contains:
+        React
+        Vite
+        dependencies
+    ->Auto created after:
+        npm install
+    -> Don't modify manually.
+
+b. public/
+    -> Contains static files:
+    -> Example:
+        public/
+            vite.svg
+            logo.png    
+    -> Access directly:
+        localhost:5173/logo.png
+
+c. src/ (Most Important)
+    -> All React code lives here.
+    -> Example:
+        src/
+            App.jsx
+            main.jsx
+            index.css
+            App.css
+
+    -> App.jsx: Main UI component.
+        Example:
+
+        function App() {
+        return <h1>Hello React</h1>
+        }
+        export default App
+
+    -> main.jsx (Entry point): This renders App component.
+
+        import React from 'react'
+        import ReactDOM from 'react-dom/client'
+        import App from './App'
+
+        ReactDOM.createRoot(document.getElementById('root')).render(
+        <App />
+        )
+
+        This connects React → HTML
+
+    -> index.css: This is for global styles.
+        Global styles:
+            body {
+            margin: 0;
+            font-family: Arial;
+            }
+        =>Applies to whole app.
+
+    -> App.css: Component-specific styles.
+        h1 {
+        color: red;
+        }
+        => Only for App component.
+
+    -> index.html: Single HTML page.
+        ->Important part:
+            <div id="root"></div>
+        => React injects app here.
+
+d. package.json
+    -> Contains:
+        dependencies
+        scripts
+        project info
+    -> Example:
+        {
+        "scripts": {
+            "dev": "vite",
+            "build": "vite build"
+        }
+        }
+    -> Run server:
+        npm run dev
+    -> Build for production:
+        npm run build
+
+e. vite.config.js
+    -> Vite configuration file.
+    -> Example:
+        import { defineConfig } from 'vite'
+        import react from '@vitejs/plugin-react'
+
+        export default defineConfig({
+        plugins: [react()],
+        })
+    -> You configure:
+        plugins
+        alias
+        build options
+
+f. gitignore
+    -> Ignored files:
+        node_modules
+        .env
+        dist
+    => These not uploaded to GitHub.
+
+g. README.md
+    -> Project documentation file.
+    -> Used to write:
+        setup instructions
+        features
+        usage

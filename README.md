@@ -1,4 +1,4 @@
-Beginning of React journey!!!!!!
+Beginning of React journey!!!!!!!!
 # Everything React
 
 A structured and comprehensive collection of React notes covering fundamentals, core architecture, and modern React tooling. This repository is designed to serve as a clear reference for learning, revision, and interview preparation.
